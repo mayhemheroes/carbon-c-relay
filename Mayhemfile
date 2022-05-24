@@ -1,0 +1,5 @@
+project: rnshah9/carbon-c-relay
+target: carbon-c-relay
+
+cmds:
+  - cmd: /usr/bin/carbon-c-relay -f /cfg -t
