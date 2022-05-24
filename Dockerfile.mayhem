@@ -4,7 +4,7 @@ ADD . /opt/carbon-c-relay-build
 WORKDIR /opt/carbon-c-relay-build
 
 RUN \
-  apk add --no-cache git bc build-base curl automake autoconf libtool && \
+  apk add --no-cache git bc build-base curl automake autoconf libtool bison flex && \
   ./configure && make
 
 FROM alpine:3.15
