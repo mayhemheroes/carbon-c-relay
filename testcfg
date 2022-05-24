@@ -1,0 +1,4 @@
+cluster send-through
+    forward
+        10.1.0.1
+    ;
