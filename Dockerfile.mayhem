@@ -1,6 +1,6 @@
 FROM alpine:3.15 AS builder
 
-ADD . /opt/carbon-c-relay-build
+COPY . /opt/carbon-c-relay-build
 WORKDIR /opt/carbon-c-relay-build
 
 RUN \
@@ -12,4 +12,4 @@ FROM alpine:3.15
 RUN mkdir /etc/carbon-c-relay
 
 COPY --from=builder /opt/carbon-c-relay-build/relay /usr/bin/carbon-c-relay
-RUN touch cfg
+COPY testcfg /cfg
