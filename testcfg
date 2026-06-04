@@ -1,0 +1,8 @@
+cluster default
+	forward
+		127.0.0.1:2003
+	;
+
+match *
+	send to default
+	;
